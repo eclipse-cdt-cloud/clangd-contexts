@@ -1,0 +1,20 @@
+{
+  "extends": "./base.tsconfig",
+  "include": [],
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "lib"
+  },
+  "references": [
+    {
+      "path": "../packages/clangd-contexts/compile.tsconfig.json"
+    },
+    {
+      "path": "../examples/clangd-contexts-cli/compile.tsconfig.json"
+    },
+    {
+      "path": "../examples/clangd-contexts-ext/compile.tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "README": [
+    "THIS FILE SHOULD NOT BE USED FOR COMPILATION.",
+    "THIS FILE IS WRITTEN FOR TSSERVER TO UNDERSTAND OUR MONOREPO.",
+    "SEE `compile.tsconfig.json` FOR COMPILATION CONFIGURATION."
+  ],
+  "extends": "./configs/base.tsconfig.json",
+  "include": [
+    "packages/*/src",
+    "examples/*/src",
+    "examples/browser/src-gen"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@theia/example-browser/*": [
+        "examples/browser/*"
+      ],
+      "@theia/example-electron/*": [
+        "examples/electron/*"
+      ],
+      "@eclipse-cdt-cloud/clangd-contexts-cli/lib/*": [
+        "examples/clangd-contexts-cli/src/*"
+      ],
+      "@eclipse-cdt-cloud/clangd-contexts/lib/*": [
+        "packages/clangd-contexts/src/*"
+      ],
+      "@clangd-contexts/example-electron/*": [
+        "examples/electron/*"
+      ],
+      "@clangd-contexts/example-browser/*": [
+        "examples/browser/*"
+      ],
+      "cdtcloud-clangd-contexts-ext/lib/*": [
+        "examples/clangd-contexts-ext/src/*"
+      ]
+    }
+  }
+}
