@@ -3,7 +3,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-curved)](https://github.com/eclipse-cdt-cloud/clangd-contexts/labels/help%20wanted)
 [![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/eclipse-cdt-cloud/clangd-contexts/labels/question)
 [![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved)](https://github.com/eclipse-cdt-cloud/clangd-contexts/labels/bug)
-[![CI](https://github.com/eclipse-cdt-cloud/clangd-contexts/workflows/CI/badge.svg?branch=main)](https://github.com/eclipse-cdt-cloud/clangd-contexts/actions?query=branch%3Amain)
+[![CI](https://github.com/eclipse-cdt-cloud/clangd-contexts/actions/workflows/ci.yml/badge.svg)](https://github.com/eclipse-cdt-cloud/clangd-contexts/actions/workflows/ci.yml)
 
 ## Overview
 
