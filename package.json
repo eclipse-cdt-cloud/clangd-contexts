@@ -50,7 +50,7 @@
     "rebuild:electron:debug": "DEBUG=electron-rebuild && yarn rebuild:electron",
     "publish": "yarn && yarn test && yarn publish:latest",
     "publish:latest": "lerna publish from-git --no-git-reset --no-verify-access --no-push",
-    "publish:next": "SHA=$(git rev-parse --short HEAD) && lerna publish preminor --exact --canary --preid next.${SHA} --dist-tag next --no-git-reset --no-git-tag-version --no-push --ignore-scripts --yes --no-verify-access",
+    "publish:next": "SHA=$(git rev-parse --short HEAD) && lerna publish preminor --exact --canary --preid next.${SHA} --dist-tag next --no-git-reset --no-git-tag-version --no-push --ignore-scripts --yes --no-verify-access --force-publish \"@eclipse-cdt-cloud/\"",
     "start:browser": "yarn rebuild:browser && yarn --cwd examples/browser start",
     "start:browser:clangd": "yarn start:browser --root-dir=../clangd-workspace",
     "start:electron": "yarn rebuild:electron && yarn --cwd examples/electron start",
