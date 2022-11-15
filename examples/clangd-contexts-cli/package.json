@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.2",
-    "@types/node": "~12"
+    "@types/node": "14.x"
   },
   "scripts": {
     "clean": "rimraf lib *.tsbuildinfo && rimraf .eslintcache && rimraf .nyc_output coverage",

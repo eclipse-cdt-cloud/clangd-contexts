@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
         "skipLibCheck": true,
         "declaration": true,
@@ -8,6 +9,7 @@
         "noImplicitThis": true,
         "noUnusedLocals": true,
         "strictNullChecks": true,
+        "noImplicitOverride": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "downlevelIteration": true,

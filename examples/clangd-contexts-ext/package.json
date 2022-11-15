@@ -20,12 +20,12 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./lib/extension.js",
+  "main": "./dist/extension.js",
   "scripts": {
     "clean": "rimraf lib *.tsbuildinfo && rimraf .eslintcache && rimraf .nyc_output coverage",
-    "package": "vsce package --no-yarn && copyfiles cdtcloud-clangd-contexts-ext-0.8.0.vsix ../../plugins",
+    "package": "vsce package --yarn && copyfiles cdtcloud-clangd-contexts-ext-0.8.0.vsix ../../plugins",
     "lint": "if-env SKIP_LINT=true && echo 'skip lint check' || eslint --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
-    "build": "tsc -b compile.tsconfig.json",
+    "build": "tsc -b compile.tsconfig.json && webpack",
     "watch": "tsc -p compile.tsconfig.json -w"
   },
   "dependencies": {
@@ -62,12 +62,11 @@
     "copyfiles": "^2.4.1",
     "eslint": "^7.27.0",
     "mocha": "^8.4.0",
-    "vsce": "^1.100.1",
-    "vscode-test": "^1.5.2"
-  },
-  "workspaces": {
-    "nohoist": [
-      "**/@eclipse-cdt-cloud/clangd-contexts"
-    ]
+    "vsce": "^2.14.0",
+    "vscode-test": "^1.5.2",
+    "ts-loader": "^9.4.1",
+    "source-map-loader": "^4.0.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }

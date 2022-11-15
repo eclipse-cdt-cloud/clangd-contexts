@@ -57,30 +57,28 @@
             "outputCapture": "std"
         },
         {
-          "name": "Launch Frontend",
-          "type": "chrome",
-          "request": "launch",
-          "url": "http://localhost:3000/",
-          "webRoot": "${workspaceRoot}",
-          "sourceMapPathOverrides": {
-            "*": "${webRoot}/*"
-          }
+            "name": "Launch Frontend",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000/",
+            "webRoot": "${workspaceRoot}",
+            "sourceMapPathOverrides": {
+                "*": "${webRoot}/*"
+            }
         },
         {
             "name": "Launch Clangd Contexts Example Extension",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
+            "sourceMaps": true,
             "args": [
                 "${workspaceFolder}/examples/clangd-workspace",
                 "--extensionDevelopmentPath=${workspaceRoot}/examples/clangd-contexts-ext"
             ],
-            "stopOnEntry": false,
-            "sourceMaps": true,
             "outFiles": [
-                "${workspaceRoot}/packages/**/lib/**/*.js",
-                "${workspaceRoot}/examples/**/lib/**/*.js"
-            ]
+                "${workspaceRoot}/examples/clangd-contexts-ext/dist/**/*.js"
+            ],
         },
     ]
 }

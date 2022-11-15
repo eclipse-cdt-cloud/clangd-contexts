@@ -17,7 +17,8 @@
   "devDependencies": {
     "@types/chai-string": "^1.4.2",
     "@types/js-yaml": "^4.0.2",
-    "@types/node": "~12",
+    "@types/mkdirp": "^1.0.2",
+    "@types/node": "14.x",
     "chai-string": "^1.5.0"
   },
   "scripts": {
