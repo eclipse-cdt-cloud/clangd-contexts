@@ -11,6 +11,7 @@ lerna-debug.log
 .nyc_output
 coverage
 errorShots
+examples/*/dist
 examples/*/src-gen
 examples/*/gen-webpack.config.js
 examples/*/.theia
